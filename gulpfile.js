@@ -22,3 +22,21 @@ gulp.task('sass', function() {
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
+
+// BrowserSync
+
+var gulp = require('gulp');
+var bs = require('browser-sync').create();
+
+gulp.task('browser-sync', ['sass'], function() {
+    bs.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
+gulp.task('watch', ['browser-sync'], function () {
+    gulp.watch("scss/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', bs.reload);
+});
