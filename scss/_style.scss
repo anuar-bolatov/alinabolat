@@ -1,37 +1,77 @@
 //  Custom Style Settings
-#gradient {
-    padding: 5%;
-}
-.about {
-    background: $white;
-    box-shadow: 0 2px 12px rgba(6,13,32,0.2);
+
+.top {
+    padding: $padding;
     
-    .about-img {
-        padding: 0;
-        margin: 0;
-        position: relative;
-        
-        figcaption {
-            position: absolute;
-            background: linear-gradient(180deg,rgba(6,13,32,0) 0, #060d20);
-            bottom: 0;
-            width: 100%;
-            height: 50%;
-            padding: 0 5%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: flex-end;
+    .heading {
+        padding: $padding;
+        color: $white;
+    }
+    
+    .about {
+        background: $white;
+        box-shadow: 0 2px 12px rgba(6,13,32,0.2);
+
+        .about-img {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            color: $white;
+            text-shadow: 1px 1px 2px rgba(6,13,32,0.2);
+
+            figcaption {
+                position: absolute;
+                background: linear-gradient(180deg,rgba(6,13,32,0) 0, #060d20);
+                bottom: 0;
+                width: 100%;
+                height: 50%;
+                padding: 0 3rem .5rem;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-end;
+            }
+        }
+
+        .about-txt {
+            padding: 3rem;
+
+            button {
+                margin-top: 1.5rem
+            }
         }
     }
     
-    .about-txt {
-        padding: 5%;
+    .menu {
+        padding-top: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        li>a {
+            color: $white;
+            text-transform: uppercase;
+            line-height: 1.6;
+            padding: 1rem;
+            transition: all 175ms ease-in;
+        }
     }
 }
 
-.top {
+.accreditation {
+    padding: $padding;
+    color: $white;
+    background: $primary-color;
+}
+
+.skills {
+    padding: $padding;
     
-    .menu {
-        justify-content: center;
+    .skills-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+        dd {
+            padding: 1rem;
+        }
     }
 }

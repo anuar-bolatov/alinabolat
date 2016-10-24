@@ -42,6 +42,11 @@
 
 @import 'util/util';
 
+
+// Custom
+
+$padding: 2rem 0;
+
 // 1. Global
 // ---------
 
@@ -62,7 +67,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'azo-sans-web', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -118,7 +123,7 @@ $header-sizes: (
   medium: (
     'h1': 48,
     'h2': 40,
-    'h3': 31,
+    'h3': 32,
     'h4': 25,
     'h5': 20,
     'h6': 16,
@@ -126,7 +131,7 @@ $header-sizes: (
 );
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
