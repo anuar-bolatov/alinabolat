@@ -1,6 +1,5 @@
 $(document).foundation();
 
-
 // Gradient
 var colors = new Array(
   [234, 224, 176],

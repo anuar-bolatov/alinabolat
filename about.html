@@ -46,16 +46,18 @@
                        </article>
                     </div>
                 </div>
-            
-                <nav class="columns small-12">
-                    <ul class="menu align-center">
-                        <li><a href="#">Accreditaions</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Work experience</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Contact me</a></li>
-                    </ul>
-                </nav>
+                
+                <div class="columns small-12" data-sticky-container>
+                    <nav class="columns sticky" data-sticky data-sticky-on="small">
+                        <ul class="menu align-center" data-magellan>
+                            <li><a href="#">Accreditaions</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Work experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 
             </header>
         </div>
@@ -95,7 +97,7 @@
             </div>
         </div>
         
-        <div class="skills">
+        <div id="skills" data-magellan-target="skills" class="skills">
             <dl class="row text-center">
                 <dt class="columns small-12">
                     <h2>Skills</h2>
@@ -113,7 +115,7 @@
             </dl>
         </div>
         
-        <div class="row align-justify align-middle">
+        <div id="experience" data-magellan-target="experience" class="row align-justify align-middle">
             <div class="columns small-12 medium-expand align-self-middle">
                <article>
                    <hgroup>
@@ -129,7 +131,7 @@
             </div>
         </div>
         
-        <div class="row align-justify align-middle">
+        <div id="education" data-magellan-target="education" class="row align-justify align-middle">
             <div class="columns small-12 medium-expand align-self-middle">
                <img src="etc/img/alinabolat-bg.jpg" alt="Alina Bolat">
             </div>
@@ -145,6 +147,8 @@
             </div>
         </div>
         
+        
+
         <footer>
         </footer>
         
